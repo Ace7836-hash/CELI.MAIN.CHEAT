@@ -1,0 +1,134 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "CELI MAIN CHEAT",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "LOADING CHEAT...",
+   LoadingSubtitle = "CELI MAIN CHEAT LOADING...",
+   ShowText = "CELI ON TOP", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Bloom", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "K", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "LUA"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = {"https://discord.gg/2WX23XxT"}, -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "CELI CHEAT [V1]",
+      Subtitle = "Key System CELI",
+      Note = "CELI V1", 
+      FileName = "EXAMPLEMAINCHEAT", -- It is recommended to use somethingas other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "https://pastebin.com/raw/xyn95Yhz" -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("Main[CHEAT]", 111803568693179) -- Title, Image
+local MainSection = MainTab:CreateSection("Main")
+
+Rayfield:Notify({
+   Title = "SABINI CELI PATAY KA",
+   Content = "LUHOD SA GODZ!!!",
+   Duration = 15,
+   Image = nil,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "InfiniteYield [CELI]",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end
+})
+
+local TrollTab = Window:CreateTab("Troll", 111803568693179) -- Title, Image
+local TrollSection = TrollTab:CreateSection("MGA SCRIPT NG IYAKIN")
+
+local Button = TrollTab:CreateButton({
+   Name = "FLING ALL [CELI]",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "MUSIC EXPO [CELI]",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ac6-Music-Vulnerability-25536"))()
+   end,
+})
+
+local MiscTab = Window:CreateTab("Misc", 111803568693179) -- Title, Image
+local MiscSection = MiscTab:CreateSection("IYAKIN MGA ADMIN NUHH HAHAHAHA")
+
+local Button = MainTab:CreateButton({
+   Name = "ESP [CELI]",
+   Callback = function()
+       pcall(function()
+           loadstring(game:HttpGet("https://obj.wearedevs.net/2/scripts/WRD%20ESP.lua"))()
+       end)
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "BRING PARTS [CELI]",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/main/BringFlingPlayers"))("More Scripts: t.me/arceusxscripts")
+   end,
+})
+local Button = MainTab:CreateButton({
+   Name = "DEX EXPLORER",
+   Callback = function()
+loadstring(game:HttpGet("https://obj.wearedevs.net/2/scripts/Dex%20Explorer.lua"))()
+   end,
+})
+
+local Button = MiscTab:CreateButton({
+   Name = "AIMBOT [V1]",
+   Callback = function()
+loadstring(game:HttpGet("https://obj.wearedevs.net/202552/scripts/universal%20aimbot.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "ADONIS [CP]",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MQ3wc7Zq", true))()
+   end,
+})
+
+local Button = TrollTab:CreateButton({
+   Name = "WICKED",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/GY1wfJRZ"))()
+   end,
+})
+
+local FREEMAINCHEATTab = Window:CreateTab("FREEMAINCHEAT", 111803568693179) -- Title, Image
+local FREEMAINCHEATSection = FREEMAINCHEATTab:CreateSection("FREEMAINCHEAT")
+
+local Button = FREEMAINCHEATTab:CreateButton({
+   Name = "FREE CHEAT",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/dv2YfVwJ"))();
+   end,
+})
+
+local Button = FREEMAINCHEATTab:CreateButton({
+   Name = "KEY:FREEMAINCHEAT",
+   Callback = function()
+   end,
+})
